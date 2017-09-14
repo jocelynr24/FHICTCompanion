@@ -1,0 +1,6 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="ic_menu_home" type="drawable">@android:drawable/ic_menu_mapmode</item>
+    <item name="ic_menu_grades" type="drawable">@android:drawable/ic_menu_sort_by_size</item>
+    <item name="ic_menu_schedule" type="drawable">@android:drawable/ic_menu_agenda</item>
+    <item name="ic_menu_settings" type="drawable">@android:drawable/ic_menu_manage</item>
+</resources>

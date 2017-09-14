@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_layout"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/action_home" />
+        <item
+            android:id="@+id/nav_grades_layout"
+            android:icon="@drawable/ic_menu_grades"
+            android:title="@string/action_grades" />
+        <item
+            android:id="@+id/nav_schedule_layout"
+            android:icon="@drawable/ic_menu_schedule"
+            android:title="@string/action_schedule" />
+        <item
+            android:id="@+id/nav_settings_layout"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="@string/action_settings" />
+    </group>
+
+</menu>
