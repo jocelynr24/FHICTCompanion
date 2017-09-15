@@ -9,4 +9,5 @@
     <string name="action_grades">Grades</string>
     <string name="action_schedule">Schedule</string>
     <string name="app_title">SUBTITLE</string>
+    <string name="title_activity_login">LoginActivity</string>
 </resources>
