@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity implements TokenFragment.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,11 @@ public class LoginActivity extends AppCompatActivity {
 
 
     }
-    public void clickLogin(View view) {
+
+
+    @Override
+    public void onFragmentInteraction(String token) {
+        // LOGGED IN YEAH
         // Intent(FirstActivity, SecondActivity.class)
         Intent intent = new Intent(this, MainActivity.class);
 
@@ -25,6 +29,4 @@ public class LoginActivity extends AppCompatActivity {
         // (No need feedback from the activity is called)
         this.startActivity(intent);
     }
-
-
 }
