@@ -18,6 +18,10 @@
             android:id="@+id/nav_settings_layout"
             android:icon="@drawable/ic_menu_settings"
             android:title="@string/action_settings" />
+        <item
+            android:id="@+id/nav_loggout_layout"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/log_out" />
     </group>
 
 </menu>

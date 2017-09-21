@@ -1,6 +1,8 @@
 package com.example.routin.fhictcompanion;
 
 import android.app.FragmentManager;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -81,6 +83,14 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction().replace(R.id.content_frame, new ScheduleFragment()).commit();
         } else if (id == R.id.nav_settings_layout) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new SettingsFragment()).commit();
+        } else if (id == R.id.nav_loggout_layout) {
+            SharedPreferences sharedPref = LoginActivity.getInstance().getPreferences(Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPref.edit();
+            editor.putString("token", "");
+            editor.commit();
+
+            android.os.Process.killProcess(android.os.Process.myPid());
+            System.exit(1);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
