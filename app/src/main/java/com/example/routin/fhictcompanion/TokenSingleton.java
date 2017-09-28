@@ -4,7 +4,7 @@ package com.example.routin.fhictcompanion;
  * Created by coen on 21/09/2017.
  */
 
-class TokenSingleton {
+public class TokenSingleton {
     private static final TokenSingleton ourInstance = new TokenSingleton();
 
     static TokenSingleton getInstance() {
