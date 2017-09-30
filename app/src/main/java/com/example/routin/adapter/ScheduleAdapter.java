@@ -11,6 +11,8 @@ import android.widget.TextView;
 import com.example.routin.dto.ScheduleMe;
 import com.example.routin.fhictcompanion.R;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 /**
@@ -38,11 +40,12 @@ public class ScheduleAdapter extends ArrayAdapter<ScheduleMe> {
             LayoutInflater inflater = ((Activity) context).getLayoutInflater();
             row = inflater.inflate(layoutResourceId, parent, false);
         }
+        DateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm");
         ScheduleMe schedule = data.get(position);
         ((TextView) row.findViewById(R.id.textgradesubject)).setText(schedule.getSubject());
         ((TextView) row.findViewById(R.id.textgradeclass)).setText(schedule.getRoom());
-        ((TextView) row.findViewById(R.id.textgradestart)).setText(schedule.getStart().toString());
-        ((TextView) row.findViewById(R.id.textgradeend)).setText(schedule.getEnd().toString());
+        ((TextView) row.findViewById(R.id.textgradestart)).setText(df.format(schedule.getStart()));
+        ((TextView) row.findViewById(R.id.textgradeend)).setText(df.format(schedule.getEnd()));
         return row;
 
     }
