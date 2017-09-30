@@ -30,10 +30,10 @@ public class LoginActivity extends AppCompatActivity implements TokenFragment.On
     private void saveToken(String token) {
         TokenSingleton.getInstance().setToken(token);
 
-        SharedPreferences sharedPref = this.getPreferences(Context.MODE_PRIVATE);
+        /*SharedPreferences sharedPref = this.getPreferences(Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("token", token);
-        editor.commit();
+        editor.commit();*/
     }
 
     private void loadToken() {

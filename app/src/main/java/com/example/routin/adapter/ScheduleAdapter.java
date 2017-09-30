@@ -6,8 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.TextView;
 
 import com.example.routin.dto.ScheduleMe;
+import com.example.routin.fhictcompanion.R;
 
 import java.util.ArrayList;
 
@@ -35,19 +37,12 @@ public class ScheduleAdapter extends ArrayAdapter<ScheduleMe> {
         if (row == null) {
             LayoutInflater inflater = ((Activity) context).getLayoutInflater();
             row = inflater.inflate(layoutResourceId, parent, false);
-            /*
-            holder.textName = (TextView) row.findViewById(R.id.textView1);
-            holder.textAddress = (TextView) row.findViewById(R.id.textView2);
-            holder.textLocation = (TextView) row.findViewById(R.id.textView3);
-            holder.btnEdit = (Button) row.findViewById(R.id.button1);
-            */
         }
-        /*
-        Customers user = data.get(position);
-        holder.textName.setText(user.getName());
-        holder.textAddress.setText(user.getAddress());
-        holder.textLocation.setText("");
-        */
+        ScheduleMe schedule = data.get(position);
+        ((TextView) row.findViewById(R.id.textgradesubject)).setText(schedule.getSubject());
+        ((TextView) row.findViewById(R.id.textgradeclass)).setText(schedule.getRoom());
+        ((TextView) row.findViewById(R.id.textgradestart)).setText(schedule.getStart().toString());
+        ((TextView) row.findViewById(R.id.textgradeend)).setText(schedule.getEnd().toString());
         return row;
 
     }
