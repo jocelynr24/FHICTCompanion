@@ -35,7 +35,6 @@ public class ScheduleApi extends AsyncTask<String, Void, ScheduleMeRoot> {
 
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestProperty("Accept", "application/json");
-            connection.setRequestProperty("Accept", "application/json");
             connection.setRequestProperty("Authorization", "Bearer " + token[0]);
             connection.connect();
             switch (connection.getResponseCode())
@@ -50,8 +49,8 @@ public class ScheduleApi extends AsyncTask<String, Void, ScheduleMeRoot> {
                     }
                     br.close();
                     String jsonText = sb.toString();
-                    System.out.println("Scheduleme");
-                    System.out.println(jsonText);
+                    //System.out.println("Scheduleme");
+                    //System.out.println(jsonText);
                     //Serialize
                     //return new Gson().fromJson(jsonText, ScheduleMeRoot.class);
                     return new GsonBuilder()
