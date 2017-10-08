@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -7,9 +8,41 @@
         android:id="@+id/text_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:text="@string/home_welcome"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/text_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/text_welcome"
+        android:layout_alignStart="@+id/text_welcome"
+        android:layout_below="@+id/text_welcome"
+        android:layout_marginTop="42dp"
+        android:text="@string/home_desc"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/home_start"
+        android:textSize="16sp"
+        android:layout_below="@+id/text_desc"
+        android:layout_alignEnd="@+id/text_desc"
+        android:layout_alignStart="@+id/text_desc" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img_fontys"
+        android:layout_below="@+id/text_start"
+        android:layout_alignStart="@+id/text_start"
+        android:layout_alignEnd="@+id/text_start" />
+
 </RelativeLayout>

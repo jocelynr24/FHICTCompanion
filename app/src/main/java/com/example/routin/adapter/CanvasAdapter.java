@@ -41,7 +41,7 @@ public class CanvasAdapter extends ArrayAdapter<CanvasMe> {
         df.setTimeZone(TimeZone.getTimeZone("GMT+4"));
         for(int i = 0; i < assignment.size(); i++) {
             ((TextView) row.findViewById(R.id.textcanvasname)).setText(assignment.get(i).getName());
-            ((TextView) row.findViewById(R.id.textcanvassubmitted)).setText(assignment.get(i).getHas_submitted_submissions());
+            ((TextView) row.findViewById(R.id.textcanvassubmitted)).setText(assignment.get(i).getHas_submitted_submissions(context));
             ((TextView) row.findViewById(R.id.textcanvascreated)).setText(context.getString(R.string.canvas_from) + " " + df.format(assignment.get(i).getCreated_at()));
             ((TextView) row.findViewById(R.id.textcanvasdue)).setText(context.getString(R.string.canvas_to) + " " + df.format(assignment.get(i).getDue_at()));
         }

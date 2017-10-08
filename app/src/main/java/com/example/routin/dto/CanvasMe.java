@@ -1,5 +1,9 @@
 package com.example.routin.dto;
 
+import android.content.Context;
+
+import com.example.routin.fhictcompanion.R;
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -32,12 +36,12 @@ public class CanvasMe {
         this.has_submitted_submissions = has_submitted_submissions;
     }
 
-    public String getHas_submitted_submissions(){
+    public String getHas_submitted_submissions(Context context){
         String strReturn;
         if(this.has_submitted_submissions){
-            strReturn = "Already submitted";
+            strReturn = context.getString(R.string.canvas_submitted);
         } else {
-            strReturn = "Not submitted yet";
+            strReturn = context.getString(R.string.canvas_notsubmitted);
         }
         return strReturn;
     }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FHICT Companion</string>
+    <string name="app_name" translatable="false">FHICT Companion</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -9,9 +9,19 @@
     <string name="action_canvas">Canvas</string>
     <string name="action_schedule">Schedule</string>
     <string name="app_title">Your personal companion!</string>
-    <string name="title_activity_login">Login to FHICT Companion</string>
+    <string name="title_activity_login" translatable="false">FHICT Companion</string>
     <string name="log_out">Log out</string>
     <string name="canvas_from">From:</string>
     <string name="canvas_to">To:</string>
     <string name="home_welcome">Welcome to the FHICT Companion App!</string>
+    <string name="home_desc">With the FHICT Companion App, you will be able to see your schedule for this week and also to see the upcoming assignments you have to send on Canvas!</string>
+    <string name="home_start">To start, you can open the left side menu by clicking on the top left button, or by swiping from the left to the right.</string>
+    <string name="settings_title">Settings</string>
+    <string name="settings_changes">Apply changes</string>
+    <string name="settings_lang">Language:</string>
+    <string name="settings_en">English</string>
+    <string name="settings_fr">French</string>
+    <string name="settings_nl">Dutch</string>
+    <string name="canvas_submitted">Already submitted</string>
+    <string name="canvas_notsubmitted">Not submitted yet</string>
 </resources>

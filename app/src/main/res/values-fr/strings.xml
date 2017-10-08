@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_canvas">Canvas</string>
+    <string name="action_home">Accueil</string>
+    <string name="action_schedule">Emploi du temps</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="app_title">Votre compagnon personnel !</string>
+    <string name="canvas_from">Du :</string>
+    <string name="canvas_to">Au :</string>
+    <string name="home_desc">Avec l\'application FHICT Companion, vous serez en mesure de voir votre emploi du temps pour cette semaine et aussi de voir les prochains travaux que vous devez envoyer sur Canvas !</string>
+    <string name="home_start">Pour commencer, vous pouvez ouvrir le menu latéral gauche en cliquant sur le bouton en haut à gauche, ou en glissant de gauche à droite.</string>
+    <string name="home_welcome">Bienvenue sur l\'app FHICT Companion !</string>
+    <string name="log_out">Déconnexion</string>
+    <string name="navigation_drawer_close">Fermer le tiroir de navigation</string>
+    <string name="navigation_drawer_open">Ouvrir le tiroir de navigation</string>
+    <string name="settings_title">Paramètres</string>
+    <string name="settings_changes">Valider</string>
+    <string name="settings_lang">Langue :</string>
+    <string name="settings_en">Anglais</string>
+    <string name="settings_fr">Français</string>
+    <string name="settings_nl">Néerlandais</string>
+    <string name="canvas_submitted">Déjà envoyé</string>
+    <string name="canvas_notsubmitted">Pas encore envoyé</string>
+</resources>
