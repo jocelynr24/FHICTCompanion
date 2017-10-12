@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="action_settings"></string>
-    <string name="action_canvas"></string>
-    <string name="action_home"></string>
+    <string name="action_settings">Instellingen</string>
+    <string name="action_canvas">Canvas</string>
+    <string name="action_home">Home</string>
     <string name="settings_en">Engels</string>
     <string name="settings_fr">Frans</string>
     <string name="settings_nl">Nederlands</string>
+    <string name="action_schedule">Rooster</string>
+    <string name="app_name" translatable="false"></string>
+    <string name="app_title">Jouw appie</string>
+    <string name="canvas_from">Van:</string>
+    <string name="canvas_notsubmitted">Niet verzonden:</string>
+    <string name="canvas_submitted">Al verzonden:</string>
+    <string name="canvas_to">Naar:</string>
+    <string name="home_desc">Met deze toffe app kan je dik coole dingen doen</string>
+    <string name="home_start">Om te beginnen swipe van links naar rechts</string>
+    <string name="home_welcome">Welkom in deze toffe app</string>
+    <string name="log_out">Log uit</string>
+    <string name="navigation_drawer_close">Doe dicht</string>
+    <string name="navigation_drawer_open">Doe open</string>
+    <string name="settings_changes">Instellingen</string>
+    <string name="settings_lang">Taal:</string>
+    <string name="settings_title">Instellingen</string>
 </resources>
