@@ -7,7 +7,6 @@
     <string name="settings_fr">Frans</string>
     <string name="settings_nl">Nederlands</string>
     <string name="action_schedule">Rooster</string>
-    <string name="app_name" translatable="false"></string>
     <string name="app_title">Jouw appie</string>
     <string name="canvas_from">Van:</string>
     <string name="canvas_notsubmitted">Niet verzonden:</string>
